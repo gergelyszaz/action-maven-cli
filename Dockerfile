@@ -12,4 +12,6 @@ COPY LICENSE README.md /
 
 COPY entrypoint.sh /entrypoint.sh
 
+COPY settings.xml /.m2/
+
 ENTRYPOINT ["/entrypoint.sh"]
