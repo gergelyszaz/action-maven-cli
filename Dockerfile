@@ -12,6 +12,7 @@ COPY LICENSE README.md /
 
 COPY entrypoint.sh /entrypoint.sh
 
+RUN apk add --no-cache gnupg
 COPY settings.xml /.m2/
 
 ENTRYPOINT ["/entrypoint.sh"]
